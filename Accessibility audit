@@ -1,0 +1,28 @@
+# Accessibility Audit
+
+## Project Overview
+
+This project is created to perform a website accessibility audit and document accessibility issues based on WCAG 2.1.
+
+## Audit Activities
+
+- Lighthouse accessibility testing
+- Keyboard-only navigation testing
+- Manual accessibility testing
+- Documentation of 5 accessibility issues
+- Repository architecture documentation
+
+## Project Structure
+
+- client/ - Frontend application
+- server/ - Backend application
+- docs/ - Audit and architecture documentation
+- tests/ - Testing files
+
+## Accessibility Target
+
+WCAG 2.1 Level AA
+
+## Author
+
+Accessibility Audit Project
