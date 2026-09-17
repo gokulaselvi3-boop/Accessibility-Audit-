@@ -1,0 +1,9 @@
+{
+  "name": "accessibility-audit-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo Client is ready",
+    "test": "echo Client tests are ready"
+  }
+}
