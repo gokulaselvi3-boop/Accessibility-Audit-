@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Audit</title>
+</head>
+<body>
+
+    <header>
+        <h1>Accessibility Audit</h1>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#audit">Audit</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>
+                This project helps document website accessibility
+                issues based on WCAG guidelines.
+            </p>
+        </section>
+
+        <section id="audit">
+            <h2>Accessibility Audit</h2>
+
+            <form>
+                <label for="website">Website URL</label>
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://example.com"
+                    required
+                >
+
+                <button type="submit">Start Audit</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Accessibility Audit Project</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Accessibility Audit Project</p>
+    </footer>
+
+</body>
+</html>
