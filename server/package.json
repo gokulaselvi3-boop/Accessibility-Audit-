@@ -1,0 +1,9 @@
+{
+  "name": "accessibility-audit-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node src/server.js",
+    "test": "node --test"
+  }
+}
