@@ -1,0 +1,12 @@
+{
+  "name": "accessibility-audit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server/src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
