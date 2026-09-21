@@ -1,15 +1,40 @@
-# Client
+# Semantic HTML5 & Accessible Component Architecture
 
-The client contains the frontend interface for the Accessibility Audit project.
+## Project Overview
 
-## Structure
+This project demonstrates a multi-page accessible enterprise dashboard using semantic HTML5 and accessible components.
 
-- `src/` — Frontend source files
-- `public/` — Public assets
-- `package.json` — Client configuration and scripts
+## Pages
 
-## Main Files
+- Dashboard
+- Reports
+- Settings
+- Audit Details
 
-- `src/index.html` — Main webpage
-- `src/app.js` — Client-side JavaScript
-- `src/app.css` — Accessibility-focused styling
+## Accessibility Features
+
+- Semantic HTML5 elements
+- Accessible navigation
+- Skip to main content link
+- Accessible data table
+- Table captions and header scopes
+- Accessible forms with labels
+- Fieldset and legend
+- Required form fields
+- Accessible dialog
+- Keyboard focus indicators
+- ARIA labels where appropriate
+
+## Validation
+
+The HTML was checked using the W3C HTML Validator.
+
+Result:
+
+**No errors or warnings to show.**
+
+## Evidence
+
+The W3C validation screenshot is available in:
+
+`docs/screenshots/w3c-validation.png`
