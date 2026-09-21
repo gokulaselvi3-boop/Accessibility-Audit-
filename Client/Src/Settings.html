@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Accessible Dashboard</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Settings</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html" aria-current="page">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section>
+      <h2>Account Settings</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Profile Information</legend>
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            aria-required="true"
+          >
+
+          <label for="language">Preferred Language</label>
+          <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="ta">Tamil</option>
+          </select>
+
+          <button type="submit">Save Settings</button>
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+  </footer>
+
+</body>
+</html>
