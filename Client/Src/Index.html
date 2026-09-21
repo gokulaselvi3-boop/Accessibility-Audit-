@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible enterprise dashboard">
+  <title>Accessible Dashboard</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Accessible Enterprise Dashboard</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Dashboard</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside aria-label="Sidebar navigation">
+    <nav aria-label="Dashboard sections">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main id="main-content">
+
+    <section id="overview">
+      <h2>Dashboard Overview</h2>
+      <p>Welcome to the accessible enterprise dashboard.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data Table</h2>
+
+      <table>
+        <caption>Project Status</caption>
+        <thead>
+          <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Status</th>
+            <th scope="col">Progress</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Accessibility Audit</th>
+            <td>In Progress</td>
+            <td>60%</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Dashboard</th>
+            <td>Completed</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Form</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              aria-required="true"
+            >
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+            >
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
