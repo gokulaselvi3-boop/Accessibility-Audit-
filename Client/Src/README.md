@@ -1,9 +1,21 @@
-# Client Source
+# Accessible Component Architecture
 
-This folder contains the frontend source files for the Accessibility Audit project.
+This folder contains the frontend files for the accessible dashboard.
 
-## Purpose
+## Pages
 
-- Provide the user interface
-- Display accessibility audit information
-- Support frontend interaction and navigation
+- `index.html` — Dashboard
+- `reports.html` — Reports
+- `settings.html` — Settings
+- `modal.html` — Accessible audit information
+
+## Accessibility Features
+
+- Semantic HTML5 elements
+- Keyboard-accessible navigation
+- Skip link
+- Accessible forms
+- Labels and fieldsets
+- Accessible data table
+- Accessible dialog
+- Visible keyboard focus
