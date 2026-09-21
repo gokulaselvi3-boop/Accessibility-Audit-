@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Details</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Audit Details</h1>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Dashboard</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Accessibility Information</h2>
+      <p>
+        This page provides details about the accessibility audit.
+      </p>
+
+      <button
+        type="button"
+        aria-label="Open accessibility audit information"
+        onclick="document.getElementById('audit-dialog').showModal()">
+        Open Audit Information
+      </button>
+
+      <dialog id="audit-dialog" aria-labelledby="dialog-title">
+
+        <h2 id="dialog-title">Audit Information</h2>
+
+        <p>
+          The audit checks keyboard navigation, forms,
+          semantic HTML and accessible components.
+        </p>
+
+        <button
+          type="button"
+          onclick="document.getElementById('audit-dialog').close()">
+          Close
+        </button>
+
+      </dialog>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+  </footer>
+
+</body>
+</html>
