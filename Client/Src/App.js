@@ -1,12 +1,11 @@
-async function checkServer() {
-  try {
-    const response = await fetch("http://localhost:3000/api/health");
-    const data = await response.json();
+const openButton = document.getElementById("open-modal");
+const closeButton = document.getElementById("close-modal");
+const modal = document.getElementById("audit-modal");
 
-    console.log("Server status:", data.message);
-  } catch (error) {
-    console.error("Unable to connect to the server.");
-  }
-}
+openButton.addEventListener("click", () => {
+  modal.showModal();
+});
 
-checkServer();
+closeButton.addEventListener("click", () => {
+  modal.close();
+});
