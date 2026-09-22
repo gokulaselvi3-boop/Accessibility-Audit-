@@ -1,132 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Accessible enterprise dashboard">
-  <title>Accessible Dashboard</title>
-  <link rel="stylesheet" href="app.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Dashboard | Design Tokens & Responsive Layout</title>
+    <style>
+        /* ========================================
+           DESIGN TOKENS - Color, Typography, Spacing
+           ======================================== */
+        :root {
+            /* Primary Brand Colors */
+            --primary-50: #f0f9ff;
+            --primary-100: #e0f2fe;
+            --primary-200: #bae6fd;
+            --primary-300: #7dd3fc;
+            --primary-400: #38bdf8;
+            --primary-500: #0ea5e9;
+            --primary-600: #0284c7;
+            --primary-700: #0369a1;
+            --primary-800: #075985;
+            --primary-900: #0c3d66;
 
-<body>
+            /* Neutral Colors */
+            --neutral-50: #f9fafb;
+            --neutral-100: #f3f4f6;
+            --neutral-200: #e5e7eb;
+            --neutral-300: #d1d5db;
+            --neutral-400: #9ca3af;
+            --neutral-500: #6b7280;
+            --neutral-600: #4b5563;
+            --neutral-700: #374151;
+            --neutral-800: #1f2937;
+            --neutral-900: #111827;
 
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <header>
-    <h1>Accessible Enterprise Dashboard</h1>
-
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Dashboard</a></li>
-        <li><a href="reports.html">Reports</a></li>
-        <li><a href="settings.html">Settings</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <aside aria-label="Sidebar navigation">
-    <nav aria-label="Dashboard sections">
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#data">Data</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
-
-  <main id="main-content">
-
-    <section id="overview">
-      <h2>Dashboard Overview</h2>
-      <p>Welcome to the accessible enterprise dashboard.</p>
-    </section>
-
-    <section id="data">
-      <h2>Data Table</h2>
-
-      <table>
-        <caption>Project Status</caption>
-        <thead>
-          <tr>
-            <th scope="col">Project</th>
-            <th scope="col">Status</th>
-            <th scope="col">Progress</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th scope="row">Accessibility Audit</th>
-            <td>In Progress</td>
-            <td>60%</td>
-          </tr>
-
-          <tr>
-            <th scope="row">Dashboard</th>
-            <td>Completed</td>
-            <td>100%</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Form</h2>
-
-      <form action="#" method="post">
-
-        <fieldset>
-          <legend>Contact Information</legend>
-
-          <div>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              autocomplete="name"
-              required
-              aria-required="true"
-            >
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-              aria-required="true"
-            >
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              aria-required="true"
-            ></textarea>
-          </div>
-
-          <button type="submit">Submit</button>
-
-        </fieldset>
-
-      </form>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
-  </footer>
-
-  <script src="app.js"></script>
-<script src="accessible.js"></script>
-</body>
-</html>
+            /* Accent Colors */
+            --accent-success: #10b981;
