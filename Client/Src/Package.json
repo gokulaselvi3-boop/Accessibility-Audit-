@@ -1,0 +1,38 @@
+{
+  "name": "ecoshop-capstone",
+  "version": "1.0.0",
+  "description": "Full Stack Web Development Capstone Project - Production-ready E-Commerce Application",
+  "main": "capstone-index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000 --cgi",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel",
+    "test": "echo 'Run manual tests - see TESTING_GUIDE.md'"
+  },
+  "keywords": [
+    "e-commerce",
+    "capstone",
+    "web-development",
+    "javascript",
+    "html",
+    "css",
+    "responsive-design",
+    "localStorage",
+    "crud"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ecoshop-capstone.git"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^latest",
+    "netlify-cli": "^latest"
+  }
+}
